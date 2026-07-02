@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body bgcolor="beige">
+    <h1>Registration Form</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required minlength="3" maxlength="30"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required> <br> <br>
+
+        <label for="password">password:</label><br>
+        <input type="password" id="password" name="password" required minlength="6" maxlength="12"> <br> <br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required min="1" max="100"> <br> <br>
+
+        <label >Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="city">City</label><br>
+        <select id="city" name="city" required>
+            <option value="">Select City</option>
+            <option value="Pune">pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Amravati">Amravati</option>
+        </select><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="CSS" name="skills" value="CSS">
+        <label for="CSS">CSS</label><br>
+
+        <input type="checkbox" id="JS" name="skills" value="JS">
+        <label for="JS">Java Script</label><br>
+
+        <label for="about">About Yourself</label><br>
+        <textarea id="about" name="about" rows="5" cols="30" required minlength="10" maxlength="200"></textarea>
+        <br><br>
+
+        <input type="submit" value="submit">
+
+
+
+    </form>
+    
+</body>
+
+</html>
